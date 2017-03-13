@@ -1,0 +1,19 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="com.test.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Welcome To Page 1" showNavButton="true" navButtonPress="handleBackPage1">
+		<content>
+			<SplitApp initialDetail="detail" initialMaster="master" >
+				<detailPages>
+					<mvc:XMLView viewName="com.test.view.folder.Detail2">
+                  </mvc:XMLView>
+				</detailPages>
+				<masterPages>
+					<mvc:XMLView viewName="com.test.view.Master">
+                  </mvc:XMLView>
+				</masterPages>
+			
+			
+			</SplitApp> 
+		</content>
+	</Page>
+</core:View>

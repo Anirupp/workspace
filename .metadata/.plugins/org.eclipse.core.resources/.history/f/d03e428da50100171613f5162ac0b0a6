@@ -1,0 +1,17 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="com.test.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Main Page">
+		<content>
+		<HBox>
+			<Button text="To Page 1" press="handlePage1"/>
+		</HBox>
+	    <HBox>
+	    	<Button text="To Page 2" press="handlePage2"/>
+	    </HBox>	
+	    <HBox>
+	    	<Input id="idMain" value="" />
+	    </HBox>			
+			
+		</content>
+	</Page>
+</core:View>

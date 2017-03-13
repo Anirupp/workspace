@@ -1,0 +1,51 @@
+{
+
+"_version": "0.0.1",
+
+"sap.app":
+
+{
+
+   "name": "com.test",
+
+   "version": "0.0.1",
+
+   "description": "Sample application to understand component.js/json",
+
+    "dependencies": {
+
+   }
+
+},
+
+"sap.ui5": {
+
+ "_version": "1.1.0",
+
+ "rootView": "com.test.view.Main",
+
+ "dependencies": {
+
+  "minUI5Version": "1.30",
+
+  "libs": {
+
+ "sap.m": {}
+
+  }
+
+ 
+
+} 
+
+},
+
+"resources": {
+            "css": [
+                  {
+                        "uri": "css/stylePlain.css"
+                  }
+            ]
+      }
+
+ }

@@ -1,0 +1,4 @@
+.showBtn {
+   overflow-y: inherit;
+   overflow-x: inherit;
+}

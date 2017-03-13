@@ -1,0 +1,21 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="com.test.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="First Page">
+		<content>
+		<HBox>
+			<Button text="Click Me" press="handlerClick" />
+			<Input value="WHat is happening" />
+		</HBox>
+<HBox>
+<Button text="Default"
+press="onPress"
+ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+<layoutData>
+<FlexItemData growFactor="1" />
+</layoutData>
+</Button>
+</HBox>
+	
+		</content>
+	</Page>
+</core:View>

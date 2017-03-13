@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="com.test.controller.Master" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Master Page">
+		<content>
+			<List
+headerText="Products"
+itemPress="handlePress"
+items="gh" >
+<StandardListItem
+title="Anirup"
+counter="1"/>
+<StandardListItem
+title="Sharan"
+counter="2"/>
+<StandardListItem
+title="Mani"
+counter="3"/>
+</List>
+			
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,9 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="com.test.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Detail Page" showNavButton="true" navButtonPress="handleBackPage2">
+		<content>
+			
+			<Input value="{model>/input1}" id="detailInput2" />
+		</content>
+	</Page>
+</core:View>

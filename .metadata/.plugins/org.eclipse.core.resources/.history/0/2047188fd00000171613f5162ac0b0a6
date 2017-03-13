@@ -1,0 +1,56 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+xmlns:f="sap.ui.layout.form"
+		controllerName="com.test.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="First Page" showNavButton="true" navButtonPress="back">
+		<content>
+		<IconTabBar>
+      <items>
+        <IconTabFilter icon="sap-icon://opportunity"   text="Tab One" >
+        	<l:Grid defaultSpan="L12 M12 S12" width="auto" vSpacing="0" hSpacing="0" class="G_Form" >
+            <l:content ><HBox class="G_Section ">
+                <f:SimpleForm 
+                minWidth="1024"
+                maxContainerCols="1"
+                editable="false"
+                layout="ResponsiveGridLayout"
+                labelSpanL="3"
+                labelSpanM="3"
+                labelSpanS="3"
+                emptySpanL="0"
+                emptySpanM="0"
+                emptySpanS="1"
+                columnsL="2"
+                columnsM="2"
+                class="editableForm">
+
+                <f:content>
+                  <core:Title text="General" icon="sap-icon://message-information" level="H4" />
+                  <Label text="{i18n>InboxRDMasterDataGovernanceDescriptionOfBasicData.display}" required="true" design="Bold" width="auto">
+                    <layoutData>
+                      <l:GridData span="L3 M3 S12" linebreak="true"/>
+                    </layoutData>
+                  </Label>
+                  <Input value="{CreateServiceRequestModel>/TABLES/CT_HEADER/0/DESCRIPTION}" 
+                    maxLength="40"
+                          type="Text"
+                          required="true"
+                          placeholder="{i18n>InboxRDMasterDataGovernanceDescriptionOfBasicData.display}"
+                          custom:required="true"
+                          liveChange="mandatoryFieldErrorState"
+                          id="description">
+                    <layoutData>
+                      <l:GridData span="L9 M9 S12" />
+                    </layoutData>
+                  </Input>
+            </f:content>
+            </f:SimpleForm>
+            </HBox>
+            </l:content>
+            </l:Grid>
+            </IconTabFilter>
+            
+        </items>
+        </IconTabBar>
+		</content>
+	</Page>
+</core:View>

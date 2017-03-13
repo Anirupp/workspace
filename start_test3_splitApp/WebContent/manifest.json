@@ -1,0 +1,105 @@
+{
+
+"_version": "0.0.1",
+
+"sap.app":
+
+{
+
+   "name": "com.test",
+
+   "version": "0.0.1",
+
+   "description": "Sample application to understand component.js/json",
+
+    "dependencies": {
+
+   }
+
+},
+
+"sap.ui5": {
+
+ "_version": "1.1.0",
+
+ "rootView": "com.test.view.App",
+
+ "dependencies": {
+
+  "minUI5Version": "1.30",
+
+  "libs": {
+
+ "sap.m": {}
+
+  }
+
+ 
+
+} ,
+"resources": {
+           
+      },
+      "routing": {
+	  "config": {
+		"routerClass": "sap.m.routing.Router",
+		"viewType": "XML",
+		"viewPath": "com.test.view",
+		"controlId": "app",
+		"controlAggregation": "pages",
+		"bypassed": {
+			"target" : "notFound"
+		}
+	  },
+	  "routes": [
+		{
+		  "pattern": "",
+		  "name": "overview",
+		  "target": "overview"
+		},
+		{
+		  "pattern": "page1/{IV}",
+		  "name": "page1",
+		  "target": "Page1"
+		},
+		{
+		  "pattern": "viewPath2",
+		  "name": "detail2",
+		  "target": "detail2"
+		},
+		{
+		  "pattern": "viewPathOut",
+		  "name": "detail3",
+		  "target": "detail3"
+		}
+		
+		
+	  ],
+	  "targets": {
+		"overview": {
+		  "viewName": "Main"
+		},
+		"Page1": {
+		  "viewName": "Detail",
+		  "transition": "flip"
+		},
+		"detail2": {
+		  "viewPath":"com.test.view.folder",
+		  "viewName": "Detail2",
+		  "transition": "flip"
+		},
+		"detail3": {
+		  "viewPath":"com.test.testing.sales",
+		  "viewName": "OutSideView",
+		  "transition": "flip"
+		}
+	  }
+	}
+      
+      
+
+}
+
+
+
+ }

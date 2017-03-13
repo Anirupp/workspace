@@ -1,0 +1,83 @@
+{
+
+"_version": "0.0.1",
+
+"sap.app":
+
+{
+
+   "name": "com.test",
+
+   "version": "0.0.1",
+
+   "description": "Sample application to understand component.js/json",
+
+    "dependencies": {
+
+   }
+
+},
+
+"sap.ui5": {
+
+ "_version": "1.1.0",
+
+ "rootView": "com.test.view.App",
+
+ "dependencies": {
+
+  "minUI5Version": "1.30",
+
+  "libs": {
+
+ "sap.m": {}
+
+  }
+
+ 
+
+} ,
+"resources": {
+            "css": [
+                  {
+                        "uri": "css/style.css"
+                  }
+            ]
+      },
+      
+"routing": {
+	  "config": {
+		"routerClass": "sap.m.routing.Router",
+		"viewType": "XML",
+		"viewPath": "com.test.view",
+		"controlId": "app",
+		"controlAggregation": "pages"
+	  },
+	  "routes": [
+		{
+		  "pattern": "",
+		  "name": "overview",
+		  "target": "overview"
+		},
+		{
+		  "pattern": "Detail222222",
+		  "name": "Detail2",
+		  "target": "Detail2"
+		}
+		
+	  ],
+	  "targets": {
+		"overview": {
+		  "viewName": "Main"
+		},
+		"Detail2": {
+		  "viewName": "Detail"
+		}
+	  }
+	}      
+
+}
+
+
+
+ }

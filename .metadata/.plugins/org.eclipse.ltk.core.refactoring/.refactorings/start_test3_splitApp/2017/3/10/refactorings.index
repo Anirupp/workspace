@@ -1,0 +1,8 @@
+1488826407278	Rename resource 'start_test3_splitapp'
+1488826423863	Move 'App.controller.js' to 'controller'
+1488826758374	Move 'Main.controller.js' to 'controller'
+1488827642050	Rename resource 'Main.controller.js'
+1488827701935	Rename resource 'Main.view.xml'
+1488827720538	Rename resource 'Main.view.js'
+1488827842993	Move 'Master.controller.js' to 'controller'
+1488828252289	Move 'Detail.controller.js' to 'controller'
